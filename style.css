@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+}
+
+h2 {
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 60px 20px;
+}
+
+.content {
+	/* Set a fixed width for normal and big screens */
+	max-width: 600px;
+	line-height: 28px;
+	margin: 0 auto;
+}
+
+p {
+	padding: 0 12px;
+	color: #666666;
+}
+li {
+	color: #666666;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 20px;
+}
+
+.grid-item {
+	padding: 20px;
+	border-style: dashed;
+	border-width: thin;
+	color: #666666;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.links {
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+
+	color: #555555;
+}
+
+.description {
+	font-size: 12px;
+	line-height: 14px;
+	text-align: justify;
+	color: #888888;
+	padding-top: 2px;
+	flex-grow: 1;
+}
+
+.buttons {
+	padding-top: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	padding: 4px 6px;
+	background: #fefefe;
+	border-style: solid;
+	border-width: thin;
+}
+
+button:hover {
+	background: #eeeeee;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+	.content {
+		/* Adjust the width for smaller screens */
+		max-width: 100%;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: white; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #666666; /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 3px solid white; /* creates padding around scroll thumb */
+}
